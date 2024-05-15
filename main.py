@@ -43,7 +43,7 @@ def main():
                 ccc = f'{f}.{target}'
                 cc = f'https://{ccc}'
                 r = get(cc,timeout=3)
-                print(f'\n  {red}[{yellow}+{red}]{cyan} SubDomain Finded {yellow}:{green} {cc} {red}:{yellow} {pinger}')
+                print(f'\n  {red}[{yellow}+{red}]{cyan} SubDomain Finded {yellow}:{green} {cc} {red}:{yellow} {pinger} | Status_Code : {r.status_code}')
             except:
                 print(f'\n  {red}[{yellow}+{red}]{red} {green}Cant Find This Subdomain {yellow}:{red} {cc}')
     except:
